@@ -6,7 +6,8 @@
 
 - Clone the git repo
 ```sh
-git clone git@github.com:llComodino/cli-party
+git clone git@github.com:llComodino/cli-party           # SSH
+git clone https://github.com/llComodino/cli-party.git   # HTTP
 ```
 
 - Install the requirements
