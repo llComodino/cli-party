@@ -1,0 +1,25 @@
+##[pylyzer] failed /home/comodino/code/cli-party/cliparty.py 1720424146 4868
+.random: Never
+
+.time: Never
+
+.sys: Never
+
+.keyboard = pyimport "keyboard"
+
+.___v_desugar_1 = pyimport "colorama"
+.colorama = pyimport "colorama"
+.init: (autoreset: Bool := Bool and Bool, convert: Bool := Bool and Bool, strip: Obj := Obj and Obj, wrap: Bool := Bool and Bool) -> NoneType
+.Fore: Never
+.Back: Never
+.Style: Never
+
+.load_words: (filename: PathLike) -> Set(Never, _: Nat)
+.load_letter_set: (filename: PathLike) -> Set(Never, _: Nat)
+.load_syllables: (filename: PathLike) -> Dict!({Never: Never, Str: Int})
+.save_used_word: (word: Obj, duration: Obj, score: Obj) -> Nat
+.update_used_letters: |Type_841 <: Structural({.__contains__ = (self: Never, ?T) -> Bool}), T: Type|(word: Iterable(T), used_letters: Set!(T, _: Nat), all_letters: Type_841) -> Set!(T, _: Nat)
+.clear_used_words: () -> Never
+.print_game_state: |Type_847 <: Structural({.__contains__ = (self: Never, ?T) -> Bool}), T: Type|(score: Obj, word_count: Obj, all_letters: Iterable(T), used_letters: Type_847, syllable: Obj) -> NoneType
+.main: () -> NoneType
+

@@ -4,7 +4,7 @@ import sys
 import keyboard
 from colorama import init, Fore, Back, Style
 
-init(autoreset=True)  # Initialize colorama
+init(autoreset=True)
 
 def load_words(filename):
     with open(filename, 'r') as file:
@@ -74,10 +74,10 @@ def main():
     score = 0
     word_count = 0
     used_words = set()
+    available_syllables = [syl for syl, diff in syllables.items() if diff >= min_difficulty]
 
     try:
         while True:
-            available_syllables = [syl for syl, diff in syllables.items() if diff >= min_difficulty]
             if not available_syllables:
                 print("No syllables available at this difficulty. Game over!")
                 break
@@ -116,11 +116,15 @@ def main():
                     
                     break  # Correct word found, break out of retry loop
 
-                if retry_count < 10:
+                if retry_count < 10 and len(user_word) > 0:
                     input("Press Enter to continue...")
                 else:
-                    print("Max retries reached. Changing syllable.")
+                    if retry_count == 10:
+                        print("Max retries reached. Changing syllable.")
+                    else:
+                        print("Changing syllable.")
                     input("Press Enter to continue...")
+                    break
 
     except KeyboardInterrupt:
         print("\nGame interrupted. Thanks for playing!")
