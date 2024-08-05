@@ -1,6 +1,8 @@
 ## CLI Party
 
-- This is a terminal game heavily inspired by the famous [bombparty](https://jklm.fun)
+![](logo.png)
+
+> This is a terminal game heavily inspired by the famous [bombparty](https://jklm.fun)
 
 ## Installation
 
