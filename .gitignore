@@ -1,3 +1,6 @@
 venv/
 test/
-used_words.txt
+*.bin
+*build/
+;*
+*~
